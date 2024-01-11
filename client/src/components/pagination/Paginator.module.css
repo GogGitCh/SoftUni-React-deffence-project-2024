@@ -1,0 +1,21 @@
+.pagination {
+    display: flex;
+    margin: 1.5em auto;
+}
+
+.pagination .a {
+    color: var(--primaryBlack);
+    padding: 0.5em 0.9em;
+    text-decoration: none;
+}
+
+.pagination .active {
+    background-color: var(--primaryBlue);
+    color: var(--primaryWhite);
+    border-radius: 5px;
+}
+
+.pagination .a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}

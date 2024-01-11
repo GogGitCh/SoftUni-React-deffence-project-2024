@@ -1,0 +1,76 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home-wrapper {
+    background-image: url("../../assets/images/main/bg_Marber-gray.jpg");
+    /* background-color: blue; */
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: var(--textShadowBright); 
+}
+
+.hero-h1 {
+    margin: 0;
+    text-align: center;
+    padding: 2em 0em 0em 0em;
+    color: var(--primaryBlue);
+    text-shadow: 0.1em 0.1em 0.1em var(--textShadowDark);
+}
+
+.hero-h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1em 0em 1em 0em;
+}
+
+.hero-p {
+    color: var(--primaryBlue);
+    text-shadow: 0.1em 0.1em 0.1em var(--textShadowBright);
+    text-align: center;
+    width: 57ch;
+    margin: auto;
+    padding: 2em 0em 2em 0em;
+}
+
+.home-wrapper-3 {
+    background-image: url("../../assets/images/main/bg_Marber-gray.jpg");
+    width: 100vw;
+    height: 120px;
+    border-bottom: 5px solid var(--primaryBlue);
+
+    background-size: cover;
+    animation: moveBackground 60s linear infinite;
+}
+
+.home-wrapper-4 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn-primary {
+    padding: 0.8em 1em 0.8em 1em;
+    background-color: var(--primaryBlueTransparent);
+    border: 0.1em solid var(--primaryBlue);
+    border-radius: 0.4em;
+    transition: 300ms;
+}
+
+.btn-primary:hover {
+    border: 0.3em solid var(--primaryBlue);
+    border-radius: 0.2em;
+    transition: 300ms;
+    
+}
+
+@keyframes moveBackground {
+    0%,
+    100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+}

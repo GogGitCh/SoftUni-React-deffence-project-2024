@@ -1,11 +1,25 @@
-import { Header } from './components'
+import { Route } from 'react-router-dom'
+
+
+import styles from './App.module.css'
+import Header from './components/header/Header'
+import Home from './pages/landing_page/Home'
+import Gallery from './pages/gallery/Gallery'
+import Footer from './components/footer/Footer'
+import Paginator from './components/pagination/Paginator'
 
 function App() {
   return (
-    <>
+    <div className={styles['app-wrapper']}>
       <Header />
-      <h1>Vite + React</h1>
-    </>
+      {/* <Home /> */}
+
+      <Gallery />
+      <Paginator />
+
+      <Footer />
+    </div>
+
   )
 }
 

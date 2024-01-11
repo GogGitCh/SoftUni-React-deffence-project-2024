@@ -1,3 +1,60 @@
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background: linear-gradient(0deg, var(--gradientBright) 0%, var(--gradientDark) 100%); 
+}
+
 .logo {
     width: 70px;
+    margin: 0.5em 2em 0.5em 2em;
 }
+
+.logo:hover {
+    width: 75px;
+    transition: all;
+}
+
+.logo-wrap {
+    display: flex;
+    position: relative;
+    margin-left: 1em;
+}
+
+.logo-text-1, .logo-text-2 {
+    font-size: 1em;
+    position: absolute;
+}
+
+.logo-text-1 {
+    top:-20%;
+    left:-10%;
+}
+
+.logo-text-2 {
+    top:50%;
+    left:50%
+    
+}
+
+
+.page-link-wrap{
+
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primaryBlack);
+}
+
+.link:hover {
+    color: var(--primaryBlue);
+}
+
+.user-link-wrap {
+    margin-right: 3em;
+    display: flex;
+    gap: 1em;
+}
+
