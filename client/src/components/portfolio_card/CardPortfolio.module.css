@@ -1,0 +1,34 @@
+.card-wrapper {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 1em auto 3em auto;
+    gap: 1em;
+}
+
+.img-frame {
+    aspect-ratio: 1/1;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img {
+    /* width: 100%; */
+    height: 200%;
+    object-fit: cover;
+    animation: moveImage 60s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translate(0,-50%);
+    }
+
+    100% {
+        transform: translate(-50%,-50%);
+    }
+}

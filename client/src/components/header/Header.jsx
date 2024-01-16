@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import styles from './Header.module.css'
-import logo from '../../assets/svg/cyberscooty-trowel.svg'
+import logo from '/svg/cyberscooty-trowel.svg'
 
 function Header() {
     return (
