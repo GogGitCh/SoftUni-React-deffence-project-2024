@@ -8,28 +8,28 @@
     justify-content: center;
     align-items: center;
     z-index: 100;
-  }
-  
-  .modal.open {
+}
+
+.modal.open {
     display: flex;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     position: relative;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     z-index: 2;
-  }
-  
-  .modal .img {
+}
+
+.modal .img {
     max-width: 100%;
     max-height: 80vh;
     border-radius: 5px;
-  }
-  
-  .close-button {
+}
+
+.close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -40,9 +40,9 @@
     color: #333;
     padding: 0.5em;
     border-radius: 50px;
-  }
-  
-  .modal-backdrop {
+}
+
+.modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,4 +50,27 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
+}
+
+.plaster-desc {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}
+
+.p {
+  color: white;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.style {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.tools {
+  max-width: 80ch;
+}

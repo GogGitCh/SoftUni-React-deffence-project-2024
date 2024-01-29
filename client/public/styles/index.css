@@ -7,6 +7,7 @@
 
     /* Site colors */
     --primaryBlue:#3dc9b3;
+    --primaryBlueHover:#34af9d;
     --primaryBlueTransparent:#3dc9b360;
     --primaryWhite: white;
     --primaryBlack: black;
@@ -21,6 +22,11 @@
     /* Text-shadow */
     --textShadowDark:rgba(0,0,0,0.62);
     --textShadowBright:rgba(0,0,0,0.20);
+    --whiteBorder: #ccc;
+    --white:#fff;
+
+    /* Error */
+    --errorRed:#ff0000;
 }
 
 body {

@@ -1,0 +1,57 @@
+.form-wrapper {
+    background-image: url('../../../public/images/register/henry-co-tqu0IOMaiU8-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--textShadowBright);
+    border-radius: 5px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--whiteBorder);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: var(--primaryBlue);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primaryBlueHover);
+}
+
+/* Optional: Style for error messages */
+.error {
+    color: var(--errorRed);
+    margin-top: 5px;
+}
+
+.p {
+    align-self: center;
+    margin: 1em auto 2em auto;
+    font-size: 0.5em; 
+}

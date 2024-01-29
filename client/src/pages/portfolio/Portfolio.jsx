@@ -7,7 +7,7 @@ function Portfolio() {
         <div className={styles['portfolio-wrapper']}>
             <div className={styles['portfolio-owner']}>
                 <div className={styles['avatar-wrapper']}>
-                    <img className={styles['owner-avatar']} src="/public/images/team/team-02.png" alt="bri" />
+                    <img className={styles['owner-avatar']} src="/images/team/team-02.png" alt="bri" />
                 </div>
                 <h1 className={styles['h1']}>[User] Portfolio</h1>
                 <a className={styles['link']} href="">Contact with</a>

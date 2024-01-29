@@ -6,7 +6,7 @@ function Gallery() {
             <div className={styles['card']}>
 
                 <div className={styles['user']}>
-                    <img className={styles['profile-img']} src="../../assets/images/infogram_cards/Image1.jpg" alt="profile image" />
+                    <img className={styles['profile-img']} src="../../../public/images/infogram_cards/Image1_1.jpg" alt="profile image" />
                     <div className={styles['user-names']}>
                         <p className={styles['first-name']}><i>George</i></p>
                         <p className={styles['family-name']}><i>Dimitrov</i></p>

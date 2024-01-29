@@ -7,7 +7,7 @@
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/public/images/gallery/white-concrete-wall.jpg");
+    background-image: url("/images/gallery/white-concrete-wall.jpg");
 
     animation: moveBackground 120s linear infinite;
     animation-direction: alternate;

@@ -23,6 +23,26 @@
     animation-direction: alternate;
 }
 
+.icon {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 200;
+    color: var(--primaryWhite);
+    transition: opacity 2s ease-in;
+}
+
+.icon .liked{
+    color: var(--primaryPink);
+}
+
+.img-frame:hover .icon {
+    transition: 1s;
+    display: block;
+    opacity: 1;
+}
+
 @keyframes moveImage {
     0% {
         transform: translate(0,-50%);

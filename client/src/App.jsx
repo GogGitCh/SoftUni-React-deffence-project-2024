@@ -8,6 +8,11 @@ import Gallery from './pages/gallery/Gallery'
 import Paginator from './components/pagination/Paginator'
 import Portfolio from './pages/portfolio/Portfolio'
 import Footer from './components/footer/Footer'
+import Register from './pages/register/Register'
+import Login from './pages/login/Login'
+import MasterSpace from './pages/master_space/MasterSpace'
+import Test from './components/test_component/Test'
+import PortfolioUploader from './components/portfolio_squares/PortfolioUploader'
 
 function App() {
   return (
@@ -18,7 +23,19 @@ function App() {
       {/* <Gallery /> */}
       {/* <Paginator /> */}
 
-      <Portfolio />
+      {/* <Portfolio /> */}
+
+      {/* <Register /> */}
+
+      {/* <Login /> */}
+
+
+
+
+
+      <MasterSpace />
+      {/* <Test /> */}
+
 
 
 
