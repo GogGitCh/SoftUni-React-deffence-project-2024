@@ -23,7 +23,7 @@ function App() {
       {/* <Gallery /> */}
       {/* <Paginator /> */}
 
-      {/* <Portfolio /> */}
+      <Portfolio />
 
       {/* <Register /> */}
 
@@ -33,7 +33,7 @@ function App() {
 
 
 
-      <MasterSpace />
+      {/* <MasterSpace /> */}
       {/* <Test /> */}
 
 

@@ -1,13 +1,13 @@
-import styles from './CardPortfolio.module.css'
-import Modal from '../../components/modal/Modal'
+import styles from './CardGalleryPortfolio.module.css'
+import Modal from '../modal/Modal'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-function CardPortfolio() {
+function CardGalleryPortfolio() {
     return (
         <>
-        <Modal imageUrl={'/images/gallery/gallery_content/type_1_0.jpg'}/>
+        {/* <Modal imageUrl={'/images/gallery/gallery_content/type_1_0.jpg'}/> */}
         
         <div className={styles['card-wrapper']}>
             <div className={styles['img-frame']}>
@@ -62,4 +62,4 @@ function CardPortfolio() {
     );
 }
 
-export default CardPortfolio
+export default CardGalleryPortfolio

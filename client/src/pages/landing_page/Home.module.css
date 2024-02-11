@@ -35,7 +35,8 @@
 }
 
 .home-wrapper-3 {
-    background-image: url("../../assets/images/main/bg_Marber-gray.jpg");
+    /* background-image: url("../../assets/images/main/bg_Marber-gray.jpg"); */
+    background-image: url("public/images/main/");
     width: 100vw;
     height: 120px;
     border-bottom: 5px solid var(--primaryBlue);
