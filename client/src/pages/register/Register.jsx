@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+
 import styles from './Register.module.css'
+
+import * as authService from '../../services/authService'
+import { request } from '../../lib/request';
 
 const Register = () => {
     const [formData, setFormData] = useState({
@@ -19,9 +23,10 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your registration logic here
-        console.log('Registration Data:', formData);
-        // Reset the form after submission
+        // console.log('Registration Data:', formData);
+
+        const bri = authService.register(formData.email, formData.password)
+
         setFormData({
             username: '',
             email: '',

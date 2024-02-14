@@ -1,5 +1,8 @@
 import { useState } from 'react';
+import * as userProfileService from '../../services/userProfileService'
+
 import styles from './PortfolioUploader.module.css'
+
 import UploadSquare from './upload/UploadSquare'
 import EditSquare from './edit/EditSquare';
 
@@ -8,8 +11,11 @@ function PortfolioUploader() {
     const [imageSlots, setImageSlots] = useState([null, null, null, null, null]);
 
     const imageUploadHandler = (e, index) => {
-        console.log(`imageUploadHandler`)
+        console.log(`imageUploadHandler`);
         const newImage = Array.from(e.target.files).map((file) => URL.createObjectURL(file));
+
+        const uploadResult = userProfileService.create(newImage);
+
         setImageSlots([...imageSlots.slice(0, index), ...newImage, ...imageSlots.slice(index + 1)]);
     }
 
@@ -26,7 +32,6 @@ function PortfolioUploader() {
         imageSlots.map((image, index) => {
             if (image) {
                 stateArr.push(<EditSquare image={image} index={index} imageEditHandler={imageEditHandler} key={index} />);
-                console.log(`trigg`);
             } else {
                 stateArr.push(<UploadSquare index={index} imageUploadHandler={imageUploadHandler} key={index} />);
             }

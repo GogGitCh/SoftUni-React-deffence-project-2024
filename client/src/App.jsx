@@ -1,6 +1,7 @@
 import { Route } from 'react-router-dom'
-import styles from './App.module.css'
+import { AuthContext } from './context/AuthContext'
 
+import styles from './App.module.css'
 
 import Header from './components/header/Header'
 import Home from './pages/landing_page/Home'
@@ -14,32 +15,27 @@ import MasterSpace from './pages/master_space/MasterSpace'
 import Test from './components/test_component/Test'
 import PortfolioUploader from './components/portfolio_squares/PortfolioUploader'
 
+
 function App() {
   return (
     <div className={styles['app-wrapper']}>
-      <Header />
-      {/* <Home /> */}
+      <AuthContext.Provider>
+        <Header />
+        {/* <Home /> */}
 
-      {/* <Gallery /> */}
-      {/* <Paginator /> */}
+        {/* <Gallery /> */}
+        {/* <Paginator /> */}
 
-      <Portfolio />
+        {/* <Portfolio /> */}
 
-      {/* <Register /> */}
+        <Register />
+        {/* <Login /> */}
 
-      {/* <Login /> */}
+        {/* <MasterSpace /> */}
+        {/* <Test /> */}
 
-
-
-
-
-      {/* <MasterSpace /> */}
-      {/* <Test /> */}
-
-
-
-
-      <Footer />
+        <Footer />
+      </AuthContext.Provider>
     </div>
 
   )

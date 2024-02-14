@@ -27,8 +27,8 @@ const MasterSpace = () => {
 
     return (
         <div className={styles['master-space-wrapper']}>
-            {edit ? <UserInfo editController={editController} UserInfoDataHandler={UserInfoDataHandler} newUserInfoData={newUserInfoData} /> :
-                <Edit editController={editController} oldUserInfoData={oldUserInfoData} EditedDataTransporter={EditedDataTransporter} />}
+            {/* {edit ? <UserInfo editController={editController} UserInfoDataHandler={UserInfoDataHandler} newUserInfoData={newUserInfoData} /> :
+                <Edit editController={editController} oldUserInfoData={oldUserInfoData} EditedDataTransporter={EditedDataTransporter} />} */}
 
             <div className={styles['main-five-img']}>
                 <PortfolioUploader />
@@ -38,8 +38,8 @@ const MasterSpace = () => {
             <div className={styles['more-portfolio']}>
                 <p className={styles['portfolio-explanation']}>Upload some more if you want to shine brighter.</p>
                 <p className={styles['p']}>Here you have no limitations!</p>
-                <UploadCard />
-                <EditCard />
+                {/* <UploadCard /> */}
+                {/* <EditCard /> */}
 
             </div>
         </div>
