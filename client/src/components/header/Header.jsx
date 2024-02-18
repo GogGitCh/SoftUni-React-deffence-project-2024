@@ -7,32 +7,32 @@ function Header() {
     return (
         <nav className={styles['nav-wrap']}>
             <div className={styles['logo-wrap']}>
-            <Link>
+                <Link to={'/'}>
                     <h1 className={`${styles['logo-text-1']} ${styles['link']}`}>Plasters</h1>
-            </Link>
-                <Link>
-                    <img src={logo} alt="logo" className={styles['logo']} />
                 </Link>
-                <Link>
+                <Link to={'/'}>
+                    <img src={logo} alt="logo" className={styles['logo']} />
+                </Link >
+                <Link to={'/'}>
                     <h1 className={`${styles['logo-text-2']} ${styles['link']}`}>Masters</h1>
                 </Link>
             </div>
 
             <div className={styles['page-link-wrap']}>
-                <Link to="/" className={styles['link']}>Gallery</Link>
+                <Link to="/gallery" className={styles['link']}>Gallery</Link>
             </div>
 
             <div className={styles['user-link-wrap']}>
                 <div>
-                    <Link to="/" className={styles['link']}>Register</Link>
+                    <Link to="/register" className={styles['link']}>Register</Link>
 
                 </div>
                 <div>
-                    <Link to="/" className={styles['link']}>Log in</Link>
+                    <Link to="/login" className={styles['link']}>Log in</Link>
 
                 </div>
                 <div>
-                    <Link to="/" className={styles['link']}>Log out</Link>
+                    <Link to="/logout" className={styles['link']}>Log out</Link>
 
                 </div>
 

@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { AuthContext } from './context/AuthContext'
 
 import styles from './App.module.css'
@@ -19,23 +19,19 @@ import PortfolioUploader from './components/portfolio_squares/PortfolioUploader'
 function App() {
   return (
     <div className={styles['app-wrapper']}>
-      <AuthContext.Provider>
+      {/* <AuthContext.Provider> */}
         <Header />
-        {/* <Home /> */}
-
-        {/* <Gallery /> */}
-        {/* <Paginator /> */}
-
-        {/* <Portfolio /> */}
-
-        <Register />
-        {/* <Login /> */}
-
-        {/* <MasterSpace /> */}
-        {/* <Test /> */}
-
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/gallery' element={<><Gallery /><Paginator /></>} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/master_space' element={<MasterSpace />} />     
+          {/* <Test /> */}
+        </Routes>
         <Footer />
-      </AuthContext.Provider>
+      {/* </AuthContext.Provider> */}
     </div>
 
   )

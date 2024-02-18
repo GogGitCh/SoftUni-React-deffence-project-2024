@@ -8,7 +8,7 @@ import App from './App.jsx'
 import '../public/styles/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true }}>
         <App />
     </BrowserRouter>
 )
