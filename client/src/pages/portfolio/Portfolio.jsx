@@ -1,4 +1,5 @@
 import styles from './Portfolio.module.css'
+import {Link} from 'react-router-dom'
 import CardGalleryPortfolio from '../../components/gallery_portfolio_card/CardGalleryPortfolio';
 import ContactWith  from '../../components/modal_cotact_with/ContactWith'
 
@@ -10,7 +11,7 @@ function Portfolio() {
                     <img className={styles['owner-avatar']} src="/images/team/team-02.png" alt="bri" />
                 </div>
                 <h1 className={styles['h1']}>[User] Portfolio</h1>
-                <a className={styles['link']} href="">Contact with</a>
+                <Link className={styles['link']} to="/portfolio/contact_with">Contact with</Link>
             </div>
             {/* <ContactWith /> */}
             <CardGalleryPortfolio />

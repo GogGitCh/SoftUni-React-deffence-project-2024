@@ -21,6 +21,9 @@ function Header() {
             <div className={styles['page-link-wrap']}>
                 <Link to="/gallery" className={styles['link']}>Gallery</Link>
             </div>
+            <div className={styles['page-link-wrap']}>
+                <Link to="/portfolio/master_space" className={styles['link']}>Upload</Link>
+            </div>
 
             <div className={styles['user-link-wrap']}>
                 <div>
@@ -33,7 +36,6 @@ function Header() {
                 </div>
                 <div>
                     <Link to="/logout" className={styles['link']}>Log out</Link>
-
                 </div>
 
             </div>

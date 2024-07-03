@@ -1,4 +1,5 @@
 import styles from './Gallery.module.css'
+import {Link} from 'react-router-dom'
 
 function Gallery() {
     return (
@@ -12,7 +13,7 @@ function Gallery() {
                         <p className={styles['family-name']}><i>Dimitrov</i></p>
                     </div>
                     <div className={styles['portfolio-link']}>
-                        <a className={styles['user-portfolio']} href="">Users Portfolio</a>
+                        <Link className={styles['user-portfolio']} to="/portfolio">Users Portfolio</Link>
                     </div>
                 </div>
 

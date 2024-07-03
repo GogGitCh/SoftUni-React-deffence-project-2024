@@ -13,7 +13,7 @@ import Register from './pages/register/Register'
 import Login from './pages/login/Login'
 import MasterSpace from './pages/master_space/MasterSpace'
 import Test from './components/test_component/Test'
-import PortfolioUploader from './components/portfolio_squares/PortfolioUploader'
+import ContactWith from './components/modal_cotact_with/ContactWith'
 
 
 function App() {
@@ -25,6 +25,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/gallery' element={<><Gallery /><Paginator /></>} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/portfolio/master_space' element={<MasterSpace />} />
+          <Route path='/portfolio/contact_with' element={<ContactWith />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/master_space' element={<MasterSpace />} />     

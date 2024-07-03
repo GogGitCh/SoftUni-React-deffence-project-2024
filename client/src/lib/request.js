@@ -18,23 +18,45 @@ export const settingsBuilder = (data) => {
     return settings;
 };
 
-export const request = (method, url, data) => {
-    return fetch(url, {
+export const request = async (method, url, data) => {
+    const res = await fetch(url, {
         method,
         ...settingsBuilder(data),
-    })
-        .then((res) => {
-            if (res.ok) {
-                return res.json();
-            } else {
-                throw new Error("Error thrown by the requester", res.status);
-            }
-        })
-        .catch((err) => {
-            console.log(err);
-            throw err;
-        });
+    });
+
+    if (res.status === 204) {
+        return {};
+    }
+
+    const result = await res.json();
+
+    if (!res.ok) {
+        throw result;
+    }
+
+    return result;
 };
+
+// export const request = (method, url, data) => {
+//     return fetch(url, {
+//         method,
+//         ...settingsBuilder(data),
+//     })
+//         .then((res) => {
+//             if (res.ok) {
+//                 return res.json();
+//             } else {
+//                 if (res.status == 409){
+//                     throw new Error("There is a user with this email")
+//                 }
+//                 throw new Error("Error thrown by the requester", res.status);
+//             }
+//         })
+//         .catch((err) => {
+//             // console.log(err);
+//             throw err
+//         });
+// };
 
 export const post = request.bind(null, "POST");
 export const get = request.bind(null, "GET");
